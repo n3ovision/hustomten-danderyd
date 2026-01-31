@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustomten Danderyd | Lokal Hantverkare för Småjobb</title>
+    <meta name="description" content="Hustomten i Danderyd - din lokala hantverkare för finsnickeri, möbelrenovering och utomhusjobb. Det du fixar 'i morgon' löser jag idag!">
+    <meta name="keywords" content="hantverkare Danderyd, snickare Stockholm, finsnickeri, möbelrenovering, småjobb, hustomten">
+    <meta property="og:title" content="Hustomten Danderyd | Lokal Hantverkare">
+    <meta property="og:description" content="Inga jobb för små! Lokal hantverkare i Danderyd för finsnickeri, möbelrenovering och utomhusjobb.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        sand: {
+                            50: '#fefdf8',
+                            100: '#fef9e7',
+                            200: '#fef3c7',
+                        },
+                        wood: {
+                            600: '#92400e',
+                            700: '#78350f',
+                            800: '#451a03',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-sand-50 font-sans text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center gap-2">
+                    <span class="text-3xl">🏠</span>
+                    <span class="text-xl font-bold text-gray-900">Hustomten</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#tjänster" class="text-gray-600 hover:text-forest-700 font-medium transition">Tjänster</a>
+                    <a href="#om" class="text-gray-600 hover:text-forest-700 font-medium transition">Om mig</a>
+                    <a href="#omdömen" class="text-gray-600 hover:text-forest-700 font-medium transition">Omdömen</a>
+                    <a href="#kontakt" class="bg-forest-700 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-forest-800 transition shadow-lg shadow-forest-700/30">
+                        Kontakta mig
+                    </a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#tjänster" class="block py-2 text-gray-600 font-medium">Tjänster</a>
+                <a href="#om" class="block py-2 text-gray-600 font-medium">Om mig</a>
+                <a href="#omdömen" class="block py-2 text-gray-600 font-medium">Omdömen</a>
+                <a href="#kontakt" class="block py-2 text-forest-700 font-semibold">Kontakta mig</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-forest-50 via-sand-50 to-sand-100"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-forest-100 rounded-full blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-sand-200 rounded-full blur-3xl opacity-70"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-forest-100 text-forest-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <span>📍</span> Danderyd & omnejd
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Det du fixar <span class="gradient-text">"i morgon"</span> löser jag idag!
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Lokal hantverkare i Danderyd för finsnickeri, möbelrenovering och utomhusjobb. 
+                        <span class="font-semibold text-gray-800">Inga jobb för små</span> – många jobb är för stora.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#kontakt" class="inline-flex items-center justify-center gap-2 bg-forest-700 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-forest-800 transition shadow-xl shadow-forest-700/30">
+                            Skicka förfrågan
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                        <a href="#tjänster" class="inline-flex items-center justify-center gap-2 bg-white text-gray-800 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-50 transition border-2 border-gray-200">
+                            Se tjänster
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-forest-600 to-forest-800 rounded-3xl p-8 lg:p-12 text-white shadow-2xl">
+                        <div class="text-8xl mb-6">🔨</div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span>
+                                <span class="font-medium">Utbildad byggnadsingenjör</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span>
+                                <span class="font-medium">7+ lägenheter & 4 hus renoverade</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm">✓</span>
+                                <span class="font-medium">Lokal i Danderyd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-sand-200 p-4 rounded-2xl shadow-lg">
+                        <div class="text-2xl">⭐⭐⭐⭐⭐</div>
+                        <div class="text-sm font-semibold text-gray-700 mt-1">100% nöjda kunder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="tjänster" class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Vad kan jag hjälpa dig med?</h2>
+                <p class="text-xl text-gray-600">Från små fix till större projekt – jag tar hand om det du inte hinner med</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gradient-to-br from-sand-50 to-white p-8 rounded-3xl border border-gray-100 shadow-lg">
+                    <div class="w-16 h-16 bg-forest-100 rounded-2xl flex items-center justify-center text-3xl mb-6">🪚</div>
+                    <h3 class="text-xl font-bold mb-3">Finsnickeri</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sätta upp tavlor, montera hyllor och skåp, bygga innerväggar, sätta lister – alla de där småsakerna som gör hemmet komplett.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Hyllor & skåp</li>
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Lister & paneler</li>
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Innerväggar</li>
+                    </ul>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-sand-50 to-white p-8 rounded-3xl border border-gray-100 shadow-lg">
+                    <div class="w-16 h-16 bg-wood-600/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🪑</div>
+                    <h3 class="text-xl font-bold mb-3">Möbelrenovering</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ge dina slitna möbler nytt liv. Spruckna stolar, vingliga bord eller antika fynd som behöver kärlek.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-wood-600">•</span> Reparation</li>
+                        <li class="flex items-center gap-2"><span class="text-wood-600">•</span> Renovering</li>
+                        <li class="flex items-center gap-2"><span class="text-wood-600">•</span> Uppfräschning</li>
+                    </ul>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-sand-50 to-white p-8 rounded-3xl border border-gray-100 shadow-lg">
+                    <div class="w-16 h-16 bg-forest-100 rounded-2xl flex items-center justify-center text-3xl mb-6">🌳</div>
+                    <h3 class="text-xl font-bold mb-3">Utomhusjobb</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Bygga trall, reparera fasad, fixa staketet eller andra utomhusprojekt som väntar på att bli gjorda.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Trall & altan</li>
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Fasadreparation</li>
+                        <li class="flex items-center gap-2"><span class="text-forest-600">•</span> Staket & murar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="om" class="py-20 lg:py-32 bg-gradient-to-br from-forest-800 to-forest-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-forest-400 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <span>👷</span> Om mig
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Din lokala Hustomte i Danderyd</h2>
+                    <div class="space-y-4 text-forest-100 text-lg leading-relaxed">
+                        <p>
+                            Jag har alltid haft en passion för att tillverka och fixa saker sedan barnsben. 
+                            Från kåtor i skogen till att renovera min Stiga Snowracer – det har alltid suttit i händerna.
+                        </p>
+                        <p>
+                            Som utbildad <span class="text-white font-semibold">Byggnadsingenjör</span> med erfarenhet 
+                            inom arkitektur och hållbart byggande känner jag mig trygg i att utföra projekt på bästa sätt.
+                        </p>
+                        <p>
+                            Det bästa med jobbet? Att hjälpa människor genomföra sina drömmar, och stötta de som 
+                            av olika skäl inte orkar eller hinner fixa klart sina projekt hemma.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl text-center">
+                        <div class="text-4xl lg:text-5xl font-bold mb-2">7+</div>
+                        <div class="text-forest-200 text-sm">Lägenheter renoverade</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl text-center">
+                        <div class="text-4xl lg:text-5xl font-bold mb-2">4</div>
+                        <div class="text-forest-200 text-sm">Hus ombyggda</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl text-center">
+                        <div class="text-4xl lg:text-5xl font-bold mb-2">100%</div>
+                        <div class="text-forest-200 text-sm">Nöjda kunder</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-6 rounded-2xl text-center">
+                        <div class="text-4xl lg:text-5xl font-bold mb-2">∞</div>
+                        <div class="text-forest-200 text-sm">Passion för hantverket</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="omdömen" class="py-20 lg:py-32 bg-sand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Vad säger kunderna?</h2>
+                <p class="text-xl text-gray-600">Några ord från nöjda kunder i området</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+                    <blockquote class="text-lg text-gray-700 mb-6 leading-relaxed italic">
+                        "Äntligen kom hyllan upp! Så himla skönt att slippa onda ögat ifrån hyllan där på golvet... och tjatet ifrån min man."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-forest-600 rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
+                        <div>
+                            <div class="font-bold text-gray-900">Malin</div>
+                            <div class="text-gray-500 text-sm">Enebyberg</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">⭐⭐⭐⭐⭐</div>
+                    <blockquote class="text-lg text-gray-700 mb-6 leading-relaxed italic">
+                        "Fantastisk service! Mycket tacksam för att du fixade min sängram, trots fredagskväll. Äntligen slipper jag sova på golvet."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-wood-600 rounded-full flex items-center justify-center text-white font-bold text-lg">F</div>
+                        <div>
+                            <div class="font-bold text-gray-900">Fatima</div>
+                            <div class="text-gray-500 text-sm">Mörby</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontakt" class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-forest-100 text-forest-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <span>✉️</span> Kontakt
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Skicka en förfrågan</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Berätta vad du behöver hjälp med så återkommer jag med en tid som passar. 
+                        <span class="font-semibold text-gray-800">Inga jobb är för små!</span>
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-forest-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">📍</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Område</div>
+                                <div class="text-gray-600">Danderyd, Enebyberg, Mörby & närliggande</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-forest-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">⏰</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Tillgänglighet</div>
+                                <div class="text-gray-600">Måndag – Fredag, flexibla tider</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-forest-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">🌐</div>
+                            <div>
+                                <div class="font-bold text-gray-900">Hemsida</div>
+                                <a href="https://hustomten-sthlm.se" class="text-forest-700 hover:underline">hustomten-sthlm.se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form id="contactForm" class="bg-sand-50 p-8 lg:p-10 rounded-3xl shadow-xl border border-gray-100">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Namn *</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-forest-600 focus:outline-none transition bg-white">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">E-post *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-forest-600 focus:outline-none transition bg-white">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Telefon</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-forest-600 focus:outline-none transition bg-white">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">Typ av jobb</label>
+                                <select id="service" name="service"
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-forest-600 focus:outline-none transition bg-white">
+                                    <option value="">Välj...</option>
+                                    <option value="finsnickeri">🪚 Finsnickeri</option>
+                                    <option value="mobelrenovering">🪑 Möbelrenovering</option>
+                                    <option value="utomhus">🌳 Utomhusjobb</option>
+                                    <option value="annat">📦 Annat</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Beskriv ditt projekt *</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    placeholder="Berätta vad du behöver hjälp med..."
+                                    class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-forest-600 focus:outline-none transition bg-white resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-forest-700 text-white py-4 rounded-xl font-bold text-lg hover:bg-forest-800 transition shadow-lg shadow-forest-700/30">
+                                Skicka förfrågan →
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-3xl">🏠</span>
+                        <span class="text-2xl font-bold">Hustomten</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Din lokala hantverkare i Danderyd. Det du fixar "i morgon" löser jag idag!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Tjänster</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#tjänster" class="hover:text-white transition">Finsnickeri</a></li>
+                        <li><a href="#tjänster" class="hover:text-white transition">Möbelrenovering</a></li>
+                        <li><a href="#tjänster" class="hover:text-white transition">Utomhusjobb</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#kontakt" class="hover:text-white transition">Skicka förfrågan</a></li>
+                        <li><a href="https://hustomten-sthlm.se" class="hover:text-white transition">hustomten-sthlm.se</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 Hustomten Danderyd. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Tack för din förfrågan! Jag återkommer så snart jag kan. 🏠');
+            this.reset();
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
