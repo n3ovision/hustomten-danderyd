@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "outputDirectory": "modern-tailwind"
+  "builds": [{ "src": "*.html", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/(.+)", "dest": "/$1.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
 }
