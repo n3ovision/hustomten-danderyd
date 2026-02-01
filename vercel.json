@@ -1,8 +1,6 @@
 {
   "version": 2,
-  "builds": [{ "src": "*.html", "use": "@vercel/static" }],
-  "routes": [
-    { "src": "/(.+)", "dest": "/$1.html" },
-    { "src": "/", "dest": "/index.html" }
-  ]
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "modern-tailwind",
+  "installCommand": "echo 'No install needed'"
 }
