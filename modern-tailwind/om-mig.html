@@ -3,74 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig | Hustomten Danderyd</title>
+    <title>Om mig - Hustomtarna Danderyd</title>
+    <meta name="description" content="Lär känna Hustomten - din lokala hantverkare i Danderyd">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Raleway', sans-serif; }</style>
 </head>
-<body class="bg-gray-50">
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-amber-600">🏠 Hustomten</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-amber-600 font-medium">Start</a>
-                    <a href="tjanster.html" class="text-gray-700 hover:text-amber-600 font-medium">Tjänster</a>
-                    <a href="finsnickeri.html" class="text-gray-700 hover:text-amber-600 font-medium">Finsnickeri</a>
-                    <a href="mobelrenovering.html" class="text-gray-700 hover:text-amber-600 font-medium">Möbelrenovering</a>
-                    <a href="om-mig.html" class="text-amber-600 font-medium">Om mig</a>
-                    <a href="kontakt.html" class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition">Kontakt</a>
+<body class="bg-gray-900 text-white">
+    
+    <header class="bg-gray-950 border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="images/logo.png" alt="Hustomtarna Logo" class="h-16">
+                    <div>
+                        <h1 class="text-2xl font-bold">Hustomtarna Danderyd</h1>
+                        <p class="text-sm text-green-500">FÖR DE LITE MINDRE JOBBEN</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 py-4 text-sm md:text-base">
+                <li><a href="index.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Hem</a></li>
+                <li><a href="tjanster.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Tjänster</a></li>
+                <li><a href="finsnickeri.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Finsnickeri</a></li>
+                <li><a href="mobelrenovering.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Möbelrenovering</a></li>
+                <li><a href="utomhusjobb.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Utomhusjobb</a></li>
+                <li><a href="om-mig.html" class="px-3 py-2 rounded hover:bg-green-600 transition bg-green-600">Om mig</a></li>
+                <li><a href="kontakt.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Kontakt</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section class="pt-24 pb-12 bg-gradient-to-br from-gray-50 to-amber-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">OM MIG</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Din lokala hustomte</p>
+    <section class="bg-cover bg-center h-96 flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/tomtarna-team.jpg');">
+        <div class="container mx-auto px-4">
+            <h1 class="text-6xl font-bold">LOKALA KONTAKTER</h1>
+            <div class="border-t-4 border-green-500 w-24 mt-4"></div>
         </div>
     </section>
 
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl h-64 flex items-center justify-center mb-12">
-                <span class="text-9xl">🎅</span>
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <p class="text-xl text-gray-300 mb-6">Tryggheten av lokala kontakter är viktigt. Därför bor våra hantverkare i de kommuner där de jobbar.</p>
+            
+            <p class="text-gray-300 mb-6">Än så länge finns vi representerade i Danderyd och Sollentuna, men tanken är att utöka till flera kommuner runt Stockholm och på sikt hela Sverige.</p>
+
+            <p class="text-gray-300 mb-6">Behovet av att få hjälp med småjobb är stort samtidigt som flertalet firmor inte har intresse att hjälpa till. Många av våra kunder behöver hjälp med småsaker såsom att sätta upp en hatthylla eller badrumsmöbler och det kanske saknas rätt verktyg, kunskap eller så räcker helt enkelt inte tiden till.</p>
+
+            <p class="text-gray-300 mb-8">Resultatet blir att ingenting händer och "hyllan står kvar på golvet".</p>
+
+            <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                <p class="text-xl font-bold mb-2 text-green-500">Det är då Tomten kommer in i bilden.</p>
             </div>
 
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Lokala kontakter</h2>
-            <p class="text-gray-600 text-lg mb-6">
-                Tryggheten av lokala kontakter är viktigt. Därför bor våra hantverkare i de kommuner där de jobbar.
-            </p>
+            <p class="text-gray-300 mb-8">Vi hjälper till med kort varsel eftersom de flesta jobben är små och det går enkelt att planera in ett par timmars jobb.</p>
 
-            <p class="text-gray-600 text-lg mb-6">
-                Än så länge finns vi representerade i Danderyd och Sollentuna, men tanken är att utöka till flera kommuner runt Stockholm och på sikt hela Sverige.
-            </p>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <img src="images/tomtarna-team.jpg" alt="Hustomten Team" class="w-full h-64 object-cover rounded">
+                <img src="images/team.jpg" alt="Hustomten i arbete" class="w-full h-64 object-cover rounded">
+            </div>
 
-            <p class="text-gray-600 text-lg mb-6">
-                Behovet av att få hjälp med småjobb är stort samtidigt som flertalet firmor inte har intresse att hjälpa till. Många av våra kunder behöver hjälp med småsaker såsom att sätta upp en hatthylla eller badrumsmöbler och det kanske saknas rätt verktyg, kunskap eller så räcker helt enkelt inte tiden till.
-            </p>
-
-            <p class="text-gray-600 text-lg mb-6">
-                Resultatet blir att ingenting händer och "hyllan står kvar på golvet".
-            </p>
-
-            <p class="text-gray-600 text-lg mb-8">
-                Det är då Tomten kommer in i bilden. Vi hjälper till med kort varsel eftersom de flesta jobben är små och det går enkelt att planera in ett par timmars jobb.
-            </p>
-
-            <div class="bg-amber-50 p-8 rounded-2xl text-center">
-                <p class="text-xl text-amber-800 font-semibold mb-4">"Det du fixar 'i morgon' löser jag idag!"</p>
+            <div class="bg-green-600 p-8 rounded-lg text-center my-12">
+                <h3 class="text-2xl font-bold mb-4">Vill du veta mer?</h3>
+                <p class="mb-6">Tveka inte att kontakta oss!</p>
+                <a href="kontakt.html" class="inline-block bg-white text-black px-8 py-3 rounded font-semibold hover:bg-gray-200 transition">KONTAKTA OSS</a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Hustomten Danderyd</p>
+    <footer class="bg-gray-950 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <img src="images/logo.png" alt="Hustomtarna Logo" class="h-16 mb-4">
+                    <h3 class="text-xl font-bold mb-2">HUSTOMTARNA DANDERYD</h3>
+                    <p class="text-sm text-gray-400">FÖR DE LITE MINDRE JOBBEN</p>
+                </div>
+                <div></div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontakt Info</h3>
+                    <div class="space-y-2 text-sm">
+                        <p>📞 070 646 06 59</p>
+                        <p>✉️ info@hustomtarna.se</p>
+                        <p>📍 Ridvägen 33, 182 39 Danderyd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+                <p>Copyright © All Rights Reserved</p>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>

@@ -3,170 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tjänster | Hustomten Danderyd</title>
+    <title>Tjänster - Hustomtarna Danderyd</title>
+    <meta name="description" content="Exempel på tjänster - Finsnickeri, Möbelrenovering, Utomhusjobb">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Raleway', sans-serif; }</style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-amber-600">🏠 Hustomten</a>
+<body class="bg-gray-900 text-white">
+    
+    <!-- Header -->
+    <header class="bg-gray-950 border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="images/logo.png" alt="Hustomtarna Logo" class="h-16">
+                    <div>
+                        <h1 class="text-2xl font-bold">Hustomtarna Danderyd</h1>
+                        <p class="text-sm text-green-500">FÖR DE LITE MINDRE JOBBEN</p>
+                    </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-amber-600 font-medium">Start</a>
-                    <a href="tjanster.html" class="text-amber-600 font-medium">Tjänster</a>
-                    <a href="finsnickeri.html" class="text-gray-700 hover:text-amber-600 font-medium">Finsnickeri</a>
-                    <a href="mobelrenovering.html" class="text-gray-700 hover:text-amber-600 font-medium">Möbelrenovering</a>
-                    <a href="om-mig.html" class="text-gray-700 hover:text-amber-600 font-medium">Om mig</a>
-                    <a href="kontakt.html" class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition">Kontakt</a>
+                <div class="hidden md:flex items-center space-x-6 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                        <span>070 64606 59</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                        <span>info@hustomtarna.se</span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 py-4 text-sm md:text-base">
+                <li><a href="index.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Hem</a></li>
+                <li><a href="tjanster.html" class="px-3 py-2 rounded hover:bg-green-600 transition bg-green-600">Tjänster</a></li>
+                <li><a href="finsnickeri.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Finsnickeri</a></li>
+                <li><a href="mobelrenovering.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Möbelrenovering</a></li>
+                <li><a href="utomhusjobb.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Utomhusjobb</a></li>
+                <li><a href="om-mig.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Om mig</a></li>
+                <li><a href="kontakt.html" class="px-3 py-2 rounded hover:bg-green-600 transition">Kontakt</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="pt-24 pb-12 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">EXEMPEL PÅ TJÄNSTER</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Många jobb är för stora men inga är för små. Här är exempel på vad jag kan hjälpa dig med.</p>
+    <!-- Page Header -->
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold text-center mb-4">EXEMPEL PÅ TJÄNSTER</h1>
+            <div class="border-t-4 border-green-500 w-24 mx-auto"></div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Services Content -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-6xl space-y-20">
+            
             <!-- Finsnickeri -->
-            <div id="finsnickeri" class="mb-20">
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div class="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-80 flex items-center justify-center">
-                        <span class="text-8xl">🔨</span>
-                    </div>
-                    <div>
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6">FINSNICKERI</h2>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Finsnickeri innefattar egentligen allting inomhus. Det kan handla om att sätta upp hyllor, montera ett kök eller IKEA-möbler. Det kan också handla om det där "sista" som aldrig blir gjort av olika anledningar. Jag vet. Har varit där själv många gånger.
-                        </p>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Det kan också innebära att få klart den där väggen eller byta golvet i gästrummet. Allt som inte är våtrum eller el kan jag hjälpa dig med.
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Montering på väggar</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Montering av möbler</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Bygga innervägg</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Målning</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Spackling</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Lägga golv</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Reparera inredning</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Lister, foder etc.</li>
-                        </ul>
-                        <a href="finsnickeri.html" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Läs mer om finsnickeri →</a>
-                    </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">FINSNICKERI</h2>
+                    <div class="border-t-4 border-green-500 w-16 mb-6"></div>
+                    <p class="text-gray-300 mb-4">Finsnickeri innefattar egentligen allting inomhus. Det kan handla om att sätta upp hyllor, montera ett kök eller IKEA-möbler. Det kan också handla om det där "sista" som aldrig blir gjort av olika anledningar.</p>
+                    <p class="text-gray-300 mb-4">Det kan också innebära att få klart den där väggen eller byta golvet i gästrummet.</p>
+                    <p class="text-gray-300 mb-6">Allt som inte är våtrum eller el kan jag hjälpa dig med.</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Montering på väggar</li>
+                        <li>✓ Montering av möbler</li>
+                        <li>✓ Bygga innervägg</li>
+                        <li>✓ Målning</li>
+                        <li>✓ Spackling</li>
+                        <li>✓ Lägga golv</li>
+                        <li>✓ Reparera inredning</li>
+                        <li>✓ Lister, foder etc.</li>
+                    </ul>
+                    <a href="finsnickeri.html" class="inline-block mt-6 bg-green-600 hover:bg-green-700 px-6 py-3 rounded font-semibold transition">LÄS MER</a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/finsnickeri.jpg" alt="Finsnickeri 1" class="w-full h-48 object-cover rounded">
+                    <img src="images/finsnickeri.jpg" alt="Finsnickeri 2" class="w-full h-48 object-cover rounded">
+                    <img src="images/finsnickeri.jpg" alt="Finsnickeri 3" class="w-full h-48 object-cover rounded">
+                    <img src="images/finsnickeri.jpg" alt="Finsnickeri 4" class="w-full h-48 object-cover rounded">
                 </div>
             </div>
-
-            <!-- Divider -->
-            <div class="border-t border-gray-200 my-16"></div>
 
             <!-- Möbelrenovering -->
-            <div id="mobelrenovering" class="mb-20">
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6">MÖBELRENOVERING</h2>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Den där ärvda stolen eller inropade skåpet som bara behöver lite kärlek för att bli perfekt, hjälper jag dig med.
-                        </p>
-                        <p class="text-gray-600 text-lg mb-6">
-                            En möbel som spruckit eller blivit ranglig kan med enkla medel bli som ny. Behövs nytt tyg eller stoppning hjälper Tomtemor till som har många års erfarenhet av sömnad bakom sig.
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Stabilisering</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Ommålning</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Nytt tyg</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Reparation</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Inoljning</li>
-                        </ul>
-                        <a href="mobelrenovering.html" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Läs mer om möbelrenovering →</a>
-                    </div>
-                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl h-80 flex items-center justify-center order-1 md:order-2">
-                        <span class="text-8xl">🪑</span>
-                    </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+                    <img src="images/finsnickeri.jpg" alt="Möbelrenovering 1" class="w-full h-48 object-cover rounded">
+                    <img src="images/finsnickeri.jpg" alt="Möbelrenovering 2" class="w-full h-48 object-cover rounded">
+                    <img src="images/finsnickeri.jpg" alt="Möbelrenovering 3" class="w-full h-48 object-cover rounded col-span-2">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-4xl font-bold mb-6">MÖBELRENOVERING</h2>
+                    <div class="border-t-4 border-green-500 w-16 mb-6"></div>
+                    <p class="text-gray-300 mb-4">Den där ärvda stolen eller inropade skåpet som bara behöver lite kärlek för att bli perfekt, hjälper jag dig med.</p>
+                    <p class="text-gray-300 mb-6">En möbel som spruckit eller blivit ranglig kan med enkla medel bli som ny.</p>
+                    <p class="text-gray-300 mb-6">Behövs nytt tyg eller stoppning hjälper Tomtemor till som har många års erfarenhet av sömnad bakom sig.</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Stabilisering</li>
+                        <li>✓ Ommålning</li>
+                        <li>✓ Nytt tyg</li>
+                        <li>✓ Reparation</li>
+                        <li>✓ Inoljning</li>
+                    </ul>
+                    <a href="mobelrenovering.html" class="inline-block mt-6 bg-green-600 hover:bg-green-700 px-6 py-3 rounded font-semibold transition">LÄS MER</a>
                 </div>
             </div>
-
-            <!-- Divider -->
-            <div class="border-t border-gray-200 my-16"></div>
 
             <!-- Utomhusjobb -->
-            <div id="utomhusjobb">
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div class="bg-gradient-to-br from-green-100 to-emerald-200 rounded-2xl h-80 flex items-center justify-center">
-                        <span class="text-8xl">🏡</span>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">UTOMHUSJOBB</h2>
+                    <div class="border-t-4 border-green-500 w-16 mb-6"></div>
+                    <p class="text-gray-300 mb-4">Jobb utomhus kan handla om att bygga en ny trall eller måla om din gamla friggebod.</p>
+                    <p class="text-gray-300 mb-4">Du kanske rent av vill riva och bygga en ny och behöver en hjälpande hand? Din södra fasad kanske fått sin beskärda del av sol och behöver målas om eller renoveras eller det kanske är dags att bygga den där stödmuren till slut.</p>
+                    <p class="text-gray-300 mb-6">Skicka in en förfrågan bara så kommer jag och kikar. Är det större jobb så har jag en och annan tomtenisse jag kan ta med.</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Trallbygge</li>
+                        <li>✓ Fasadrenovering</li>
+                        <li>✓ Gjutning</li>
+                        <li>✓ Bygga nytt förråd</li>
+                        <li>✓ Bygga staket</li>
+                        <li>✓ Målning</li>
+                    </ul>
+                    <div class="mt-6 bg-green-600 p-4 rounded">
+                        <p class="font-bold text-center">KONTAKTA "TOMTEN" FÖR PRISFÖRSLAG</p>
                     </div>
-                    <div>
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6">UTOMHUSJOBB</h2>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Jobb utomhus kan handla om att bygga en ny trall eller måla om din gamla friggebod. Du kanske rent av vill riva och bygga en ny och behöver en hjälpande hand?
-                        </p>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Din södra fasad kanske fått sin beskärda del av sol och behöver målas om eller renoveras, eller det kanske är dags att bygga den där stödmuren till slut.
-                        </p>
-                        <p class="text-gray-600 text-lg mb-6">
-                            Skicka in en förfrågan bara så kommer jag och kikar. Är det större jobb så har jag en och annan tomtenisse jag kan ta med.
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Trallbygge</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Fasadrenovering</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Gjutning</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Bygga nytt förråd</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Bygga staket</li>
-                            <li class="flex items-center text-gray-700"><span class="text-amber-600 mr-3">✓</span> Målning</li>
-                        </ul>
-                        <a href="kontakt.html" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Kontakta för prisförslag →</a>
-                    </div>
+                    <a href="utomhusjobb.html" class="inline-block mt-6 bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded font-semibold transition">LÄS MER</a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="images/utomhusjobb.jpg" alt="Utomhusjobb 1" class="w-full h-48 object-cover rounded">
+                    <img src="images/utomhusjobb.jpg" alt="Utomhusjobb 2" class="w-full h-48 object-cover rounded">
+                    <img src="images/utomhusjobb.jpg" alt="Utomhusjobb 3" class="w-full h-48 object-cover rounded col-span-2">
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-16 bg-amber-600 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Redo att komma igång?</h2>
-            <p class="text-xl mb-8 text-amber-100">Tveka inte att höra av dig för en kostnadsförfrågan!</p>
-            <a href="kontakt.html" class="bg-white text-amber-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-100 transition">Kontakta mig →</a>
+            <p class="text-gray-300 mb-8">Kontakta oss idag för en kostnadsfri offert!</p>
+            <a href="kontakt.html" class="inline-block bg-green-600 hover:bg-green-700 px-8 py-4 rounded font-semibold text-lg transition">KONTAKTA OSS</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="bg-gray-950 py-12">
+        <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-white text-xl font-bold mb-4">🏠 Hustomten</h3>
-                    <p class="text-gray-400">Din lokala hantverkare i Danderyd.</p>
+                    <img src="images/logo.png" alt="Hustomtarna Logo" class="h-16 mb-4">
+                    <h3 class="text-xl font-bold mb-2">HUSTOMTARNA DANDERYD</h3>
+                    <p class="text-sm text-gray-400 mb-4">FÖR DE LITE MINDRE JOBBEN</p>
+                    <p class="text-sm text-gray-400">Hustomten Sthlm ägs av Sjökatt AB, ett litet personligt familjeföretag.</p>
                 </div>
+                <div></div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Länkar</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-white">Start</a></li>
-                        <li><a href="tjanster.html" class="hover:text-white">Tjänster</a></li>
-                        <li><a href="kontakt.html" class="hover:text-white">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Kontakt</h4>
-                    <p class="text-amber-500 mb-2">📞 070 646 06 59</p>
-                    <p class="text-gray-400">📍 Ridvägen 33, Danderyd</p>
+                    <h3 class="text-xl font-bold mb-4">Kontakt Info</h3>
+                    <div class="space-y-2 text-sm">
+                        <p>📞 070 646 06 59</p>
+                        <p>✉️ info@hustomtarna.se</p>
+                        <p>📍 Ridvägen 33, 182 39 Danderyd</p>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-                <p>&copy; 2024 Hustomten Danderyd</p>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+                <p>Copyright © All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
